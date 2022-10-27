@@ -46,7 +46,8 @@
         "content.slideshow",
         "content.paragraph",
         "content.image",
-        "content.title"
+        "content.title",
+        "content.block"
       ],
       "pluginOptions": {
         "i18n": {

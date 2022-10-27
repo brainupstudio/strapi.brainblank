@@ -1,0 +1,48 @@
+{
+  "collectionName": "components_content_blocks",
+  "info": {
+    "displayName": "Block",
+    "icon": "vector-square",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "BackgroundColor": {
+      "type": "enumeration",
+      "enum": [
+        "None",
+        "Default",
+        "Muted",
+        "Primary",
+        "Secondary"
+      ],
+      "default": "None"
+    },
+    "Height": {
+      "type": "enumeration",
+      "enum": [
+        "None",
+        "Small",
+        "Medium",
+        "Large",
+        "Viewport"
+      ],
+      "default": "None"
+    },
+    "Title": {
+      "type": "component",
+      "repeatable": false,
+      "component": "content.title"
+    },
+    "Paragraph": {
+      "type": "component",
+      "repeatable": false,
+      "component": "content.paragraph"
+    },
+    "Image": {
+      "type": "component",
+      "repeatable": false,
+      "component": "content.image"
+    }
+  }
+}

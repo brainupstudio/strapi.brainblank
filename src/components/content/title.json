@@ -22,6 +22,10 @@
         "H6"
       ],
       "default": "H1"
+    },
+    "Color": {
+      "type": "customField",
+      "customField": "plugin::color-picker.color"
     }
   }
 }
