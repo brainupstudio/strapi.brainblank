@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_content_empty_spaces",
+  "info": {
+    "displayName": "EmptySpace",
+    "icon": "arrows-alt-v",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Desktop": {
+      "type": "integer",
+      "default": 30
+    },
+    "Responsive": {
+      "type": "integer",
+      "default": 10
+    }
+  }
+}
