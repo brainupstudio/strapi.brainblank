@@ -47,7 +47,8 @@
         "content.paragraph",
         "content.image",
         "content.title",
-        "content.block"
+        "content.block",
+        "content.empty-space"
       ],
       "pluginOptions": {
         "i18n": {

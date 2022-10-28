@@ -25,7 +25,7 @@
         "content.image",
         "content.title",
         "content.block",
-        "shared.seo"
+        "content.empty-space"
       ],
       "pluginOptions": {
         "i18n": {
