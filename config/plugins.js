@@ -1,10 +1,3 @@
-// module.exports = {
-//   'wysiwyg': {
-//     enabled: true,
-//     resolve: './src/plugins/wysiwyg'
-//   },
-
-// }
 module.exports = () => {
   return {
     ckeditor: {
@@ -202,11 +195,9 @@ module.exports = () => {
     "vercel-deploy": {
       enabled: true,
       config: {
-        deployHook:
-          "https://api.vercel.com/v1/integrations/deploy/prj_PMGF2WQpRPvIl47ARg7cZd5h3AXj/sI3RckDQa8",
-        apiToken: "xF9pVTx273KHi7uVW1HaOpDE",
-        appFilter: "strapi-next",
-        // teamFilter: "V45gu9nHhocJlx05fuTtDDW6",
+        deployHook: process.env.VERCEL_DEPLOY_PLUGIN_HOOK,
+        apiToken: process.env.VERCEL_DEPLOY_PLUGIN_API_TOKEN,
+        appFilter: process.env.VERCEL_DEPLOY_PLUGIN_APP_FILTER,
         roles: ["strapi-super-admin", "strapi-editor", "strapi-author"],
       },
     },
