@@ -1,3 +1,31 @@
+# 🧠 BrainBlank project – Strapi + Next.js
+
+The power of Strapi as a backend and the versatility of Next.js for the frontend are the basis of this project.
+The frontend project can be found [here](https://github.com/brainupstudio/next.brainblank)
+
+## Project settings
+Create .env file on root folder and set these variables.
+
+## Vercel Deploy
+Set these variables for automatic deployment to Vercel, otherwise disable the plugin.
+```
+VERCEL_DEPLOY_PLUGIN_HOOK
+VERCEL_DEPLOY_PLUGIN_API_TOKEN
+VERCEL_DEPLOY_PLUGIN_APP_FILTER
+```
+
+## MySQL database
+Set these variables for your own MySQL database.
+```
+DATABASE_HOST
+DATABASE_PORT
+DATABASE_NAME
+DATABASE_USERNAME
+DATABASE_PASSWORD
+DATABASE_SSL
+```
+
+
 # 🚀 Getting started with Strapi
 
 Strapi comes with a full featured [Command Line Interface](https://docs.strapi.io/developer-docs/latest/developer-resources/cli/CLI.html) (CLI) which lets you scaffold and manage your project in seconds.
