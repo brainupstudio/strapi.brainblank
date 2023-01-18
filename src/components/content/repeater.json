@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_content_repeaters",
+  "info": {
+    "displayName": "Repeater",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Collection": {
+      "type": "enumeration",
+      "enum": [
+        "news"
+      ],
+      "default": "news",
+      "required": true
+    }
+  }
+}

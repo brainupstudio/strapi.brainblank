@@ -48,7 +48,8 @@
         "content.image",
         "content.title",
         "content.block",
-        "content.empty-space"
+        "content.empty-space",
+        "content.repeater"
       ],
       "pluginOptions": {
         "i18n": {
