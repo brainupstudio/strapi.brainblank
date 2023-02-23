@@ -1,10 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "news",
+  "collectionName": "projects",
   "info": {
-    "singularName": "article",
-    "pluralName": "news",
-    "displayName": "News",
+    "singularName": "project",
+    "pluralName": "projects",
+    "displayName": "Project",
     "description": ""
   },
   "options": {
@@ -12,27 +12,27 @@
   },
   "pluginOptions": {},
   "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "Title"
+    },
     "Dynamic": {
       "type": "dynamiczone",
       "components": [
         "content.block",
-        "content.card",
         "content.empty-space",
+        "content.card",
         "content.image",
         "content.paragraph",
         "content.slideshow",
-        "content.title"
+        "content.title",
+        "content.repeater"
       ]
-    },
-    "Title": {
-      "type": "string",
-      "required": true,
-      "default": "News title"
-    },
-    "slug": {
-      "type": "uid",
-      "targetField": "Title",
-      "required": true
     },
     "Image": {
       "type": "media",
@@ -41,10 +41,6 @@
       "allowedTypes": [
         "images"
       ]
-    },
-    "Abstract": {
-      "type": "text",
-      "maxLength": 140
     }
   }
 }

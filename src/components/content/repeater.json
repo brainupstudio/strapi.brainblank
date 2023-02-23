@@ -9,10 +9,17 @@
     "Collection": {
       "type": "enumeration",
       "enum": [
-        "news"
+        "news",
+        "projects"
       ],
       "default": "news",
       "required": true
+    },
+    "Elements": {
+      "type": "integer",
+      "default": 1,
+      "required": true,
+      "max": 999
     }
   }
 }
