@@ -1,16 +1,19 @@
-on: push
-name: 🚀 Deploy website on push
+on:
+  push:
+    branches:
+      - develop
+    name: Publish on BrainServer
 jobs:
-  web-deploy:
-    name: 🎉 Deploy
-    runs-on: ubuntu-latest
-    steps:
-      - name: 🚚 Get latest code
-        uses: actions/checkout@v3
-
-      - name: 📂 Sync files
-        uses: SamKirkland/FTP-Deploy-Action@4.3.3
-        with:
-          server: ftp://brainserver.synology.me/docker/Node/Strapi
-          username: luca.pagot
-          password: ${{ secrets.FTP_PASSWORD }}
+ FTP-Deploy-Action:
+   name: FTP-Deploy-Action
+   runs-on: ubuntu-latest
+   steps:
+   - uses: actions/checkout@master
+     with:
+       fetch-depth: 2
+   - name: FTP-Deploy-Action
+     uses: SamKirkland/FTP-Deploy-Action@v3.1.1
+     with:
+       ftp-server: ftp://brainserver.synology.me/docker/Node/Strapi
+       ftp-username: luca.pagot
+       ftp-password: ${{ secrets.FTP_PASSWORD }}
