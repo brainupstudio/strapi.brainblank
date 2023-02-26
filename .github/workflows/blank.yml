@@ -11,6 +11,6 @@ jobs:
       - name: 📂 Sync files
         uses: SamKirkland/FTP-Deploy-Action@4.3.3
         with:
-          server: ftp.brainserver.synology.me/docker/Node/Strapi
+          server: ftp://brainserver.synology.me/docker/Node/Strapi
           username: luca.pagot
           password: ${{ secrets.FTP_PASSWORD }}
