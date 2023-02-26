@@ -14,7 +14,6 @@ jobs:
    - name: FTP-Deploy-Action
      uses: SamKirkland/FTP-Deploy-Action@v3.1.2-patch
      with:
-       ftp-server: ftp://ftp.brainserver.synology.me/docker/Node/Strapi
+       ftp-server: ftp://brainserver.synology.me/docker/Node/Strapi
        ftp-username: luca.pagot
-       ftp-password: 1q"W£E$R%
-       git-ftp-args: --insecure
+       ftp-password: ${{ secrets.FTP_PASSWORD }}
